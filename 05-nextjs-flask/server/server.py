@@ -19,7 +19,7 @@ def load_data_from_csv(file_path):
 rain, soilTemp, soilMoisture = load_data_from_csv('../../Data/soil data/AcrossAucklandRainfallStation/ArarimuCombined_Data_15mins_SoilProfile.csv')
 
 
-@app.route('/api/home', methods=["GET"])
+@app.route('/', methods=["GET"])
 def return_home():
     return jsonify({
         "message": "Lasr 3 days of weather data",

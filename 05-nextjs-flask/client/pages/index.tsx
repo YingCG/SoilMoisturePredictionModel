@@ -13,7 +13,7 @@ function index() {
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/home").then(
+    fetch("http://localhost:8080/").then(
       response => response.json()
     ).then((data) => {
       console.log(data)
